@@ -1,0 +1,18 @@
+//.kanban-container {
+//  display: flex;
+//  overflow-x: scroll;
+//  flex: 1;
+//}
+
+.kanban-container{
+  padding: 3.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.kanban-column-outer-container{
+  display: flex;
+  overflow-x: scroll;
+  flex: 1;
+}

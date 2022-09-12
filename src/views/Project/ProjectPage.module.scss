@@ -1,0 +1,16 @@
+.project-container {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  width: 100%;
+}
+
+.project-aside {
+  background-color: rgb(244, 245, 247);
+  display: flex;
+}
+
+.project-main {
+  box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+}

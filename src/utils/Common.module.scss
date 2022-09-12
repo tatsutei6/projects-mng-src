@@ -1,0 +1,19 @@
+.common-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+.btn-no-padding {
+  padding: 0;
+}
+
+.a-delete {
+  padding: 0;
+  color: red !important;
+}

@@ -1,0 +1,16 @@
+html {
+    /*em 父元素的font-size*/
+    /*rem html的font-size*/
+    /*默认font-size为16px*/
+    /*16px的62.5%为10px*/
+    font-size: 62.5%;
+}
+
+/* 1vh等于1%的viewport的高度 */
+html body #root {
+    min-height: 100vh;
+}
+
+.App {
+    min-height: 100vh;
+}

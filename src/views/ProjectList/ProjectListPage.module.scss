@@ -1,0 +1,57 @@
+.project-list-container {
+  // 使用grip布局
+  display: grid;
+  grid-template-rows: 6rem 1fr 6rem;
+  grid-template-columns: 20rem 1fr 20rem;
+  grid-template-areas: "header header header"
+  "main main main"
+  "footer footer footer";
+  height: 100vh;
+  padding: 3.2rem;
+}
+
+.project-list-header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-list-header-left {
+  display: flex;
+}
+
+.project-list-header-right {
+  display: flex;
+}
+
+.project-list-nav {
+  grid-area: nav;
+  height: calc(100vh - 6rem);
+}
+
+.project-list-main {
+  grid-area: main;
+  height: calc(100vh - 6rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-list-aside {
+  grid-area: aside;
+  height: calc(100vh - 6rem);
+}
+
+
+.project-list-footer {
+  grid-area: main;
+  height: calc(100vh - 6rem);
+}
+
+
+.project-list-row {
+  > * {
+    margin-right: 2rem;
+  }
+}
