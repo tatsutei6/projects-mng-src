@@ -3,7 +3,7 @@ import { Button, Divider, Popconfirm, Table } from 'antd'
 import dayjs from 'dayjs'
 import { Pin } from '../Others/Pin'
 import { useProjectModal } from '../../hooks/project'
-import React, { Fragment, useCallback, useEffect, useMemo, useState } from 'react'
+import React, { Fragment, useCallback, useMemo, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { projectActions, selectProjectList } from '../../store/project.slice'
 import commonStyles from '../../utils/Common.module.scss'
@@ -12,7 +12,6 @@ import { useAppDispatch } from '../../store'
 import { Dao } from '../../dao/dao'
 import { Link } from 'react-router-dom'
 import ProjectSearch from '../ProjectSearch/ProjectSearch'
-import { CONSTANTS } from '../../utils/utils'
 
 /**
  * ProjectListコンポーネント
@@ -21,7 +20,7 @@ import { CONSTANTS } from '../../utils/utils'
 const ProjectList = () => {
   // Projectをupdateするメゾット
   // ReduxからprojectListをロードする
-  const tempData: Project[] = useSelector(selectProjectList)
+  useSelector(selectProjectList)
   const projectList: Project[] = useSelector(selectProjectList)
 
   // const [projectList, setProjectList] = useState<Project[]>([])
