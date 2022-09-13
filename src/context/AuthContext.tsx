@@ -138,7 +138,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
             resolve({msg:'ユーザーとパスワードが一致',timer})
           } else {
             // user名とパスワードが不一致で、ログインfail
-            reject('ユーザーとパスワードが不一致')
+            reject({ msg: 'ユーザーとパスワードが不一致' })
           }
         }, () => {
           reject({ msg: 'DBエラーが発生' })
